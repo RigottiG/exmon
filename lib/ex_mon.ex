@@ -24,6 +24,7 @@ defmodule ExMon do
   end
 
   defp handle_status(:game_over, _move), do: Status.print_round_message(Game.info())
+
   defp handle_status(_other, move) do
     move
     |> Actions.fetch_move()

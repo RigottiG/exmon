@@ -16,7 +16,6 @@ defmodule ExMon.Game.Actions do
     end
   end
 
-
   def fetch_move(move) do
     Game.player()
     |> Map.get(:moves)
@@ -28,5 +27,4 @@ defmodule ExMon.Game.Actions do
       if value == move, do: {:ok, key}
     end)
   end
-
 end
